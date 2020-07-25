@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:id="@+id/appbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:background="?attr/colorPrimary"-->
+    <!--            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/colors_comtainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/black_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#fd0000" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/green_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#04ff00" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/orange_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#f55600" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/purple_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#fd00d7" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/aqua_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:background="#00f7ff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsContainers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colors_comtainer"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/testing"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Erase"
+            android:layout_marginTop="7dp"
+            />
+
+        <Button
+            android:id="@+id/draw_cirlce"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Draw Circle"
+            />
+
+        <Button
+            android:id="@+id/draw_line"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="7dp"
+            android:textSize="10sp"
+            android:text="Draw Lines"
+            />
+
+        <Button
+            android:id="@+id/circle_size"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_marginTop="7dp"
+            android:text="Circle Size"
+            />
+        <Button
+            android:id="@+id/brush_width"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Brush Width"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_buttons_Containers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsContainers"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/text_btn"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Write Text"
+            android:layout_marginTop="7dp"
+            />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="70dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Save Image"
+            android:layout_marginTop="7dp"
+            />
+
+    </LinearLayout>
+    <com.nigera.paintapplication.FingerPainterView
+        android:id="@+id/myFingerPainterViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_buttons_Containers"
+
+
+        />
+
+</RelativeLayout>

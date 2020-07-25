@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/material_dialog_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/smple_text_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Selct the brush width"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/brush_width_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smple_text_confirmation"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:textColorHint="#acacac"
+        android:paddingLeft="5dp"
+        android:hint="selcet brush size"
+        android:textSize="19sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/container_decision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brush_width_edt"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/dialognBtn_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Confirm"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
